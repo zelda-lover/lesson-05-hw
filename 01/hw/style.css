@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;;
+   }
+
+h1 {
+    font-size: 200%;
+    margin-top: 20px;
+   }
+
+.btn-secondary {
+    text-align: center;
+}

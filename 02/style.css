@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    background-image: url("https://projects.codewizardshq.com/i_h332_devops_02/bg_mono.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(185, 130, 63);
+    font-size: 85px;
+    margin-top: 30px;
+}
+
+.content {
+    background-color: rgb(215, 151, 74);
+    padding: 15px;
+    width: 70%;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.links{
+    position: relative;
+    justify-content: space-between;
+    background-color: #c6f5ea;
+    padding: 10px;
+    margin: 50px;
+}
+
+#python-div, #javascript-div, #html-div {
+    position: absolute;
+}
+
+#python-div {
+    left: 50px;
+    margin: 10px;
+}
+
+#javascript-div {
+    right: 50px;
+    margin: 10px;
+}
+
+#html-div {
+    left: 385px;
+    top: 360px;
+}
+
+.back {
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: paleturquoise;
+    border-style: solid;
+    border-color: darkslategray;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.back:hover {
+    background-color: darkslategray;
+    color: white;
+    border-style: solid black;
+}
