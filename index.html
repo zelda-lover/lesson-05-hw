@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Single+Day&display=swap" rel="stylesheet">
+
+    <title>Desserts</title>
+</head>
+<body>
+<div class="main"> 
+    <h1 class="title-text">Desserts</h1>
+    <div w3-include-html="text.txt"></div>
+    <div class="container">
+        <div class="category" id="category1" value="category_01">
+            <p>Icecream</p>
+            <p><input type="submit" value="Vanilla" id="vanilla"></p>
+            <p><input type="submit" value="Chocolate" id="chocolate"></p>
+            <p><input type="submit" value="Strawberry" id="strawberry"></p>
+        </div>
+        <div class="category" id="category2" value="category_02">
+            <p>Waffles</p>
+            <p><input type="submit" value="Plain" id="plain"></p>
+            <p><input type="submit" value="Sugar" id="sugar"></p>
+            <p><input type="submit" value="Syrup" id="syrup"></p>
+        </div>
+        <div class="category" id="category3" value="category_03">
+            <p>Other</p>
+            <p><input type="submit" value="Coffee" id="coffee"></p>
+            <p><input type="submit" value="Tea" id="tea"></p>
+            <p><input type="submit" value="Fruit" id="fruit"></p>
+        </div>
+    </div>
+    <div id="content">
+        <iframe id="info" src="text.txt"></iframe>
+    </div>
+</div>
+    <script>
+        $("#vanilla").click(function(){
+            $("#info").attr("src", "category_01/vanilla/vanilla.txt");
+        });
+        $("#chocolate").click(function(){
+            $("#info").attr("src", "category_01/chocolate/chocolate.txt");
+        });
+        $("#strawberry").click(function(){
+            $("#info").attr("src", "category_01/strawberry/strawberry.txt");
+        });
+        $("#plain").click(function(){
+            $("#info").attr("src", "category_02/plain/pure.txt");
+        });
+        $("#sugar").click(function(){
+            $("#info").attr("src", "category_02/sugar/sugar.txt");
+        });
+        $("#syrup").click(function(){
+            $("#info").attr("src", "category_02/syrup/syrup.txt");
+        });
+        $("#coffee").click(function(){
+            $("#info").attr("src", "category_03/coffee/coffee.txt");
+        });
+        $("#tea").click(function(){
+            $("#info").attr("src", "category_03/tea/tea.txt");
+        });
+        $("#fruit").click(function(){
+            $("#info").attr("src", "category_03/fruit/fruit.txt");
+        });
+        
+    </script>
+</body>
+</html>
